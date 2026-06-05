@@ -1,11 +1,15 @@
-# This file is where you keep secret settings, passwords, and tokens!
-# If you put them in the code you risk committing that info or sharing it
-CIRCUITPY_WIFI_SSID = "wifi network"
-CIRCUITPY_WIFI_PASSWORD = "wifi password"
+# WiFi credentials
+CIRCUITPY_WIFI_SSID = "your_wifi_network"
+CIRCUITPY_WIFI_PASSWORD = "your_wifi_password"
 
-# area to search for flights: top latitude, bottom latitude, left longitude, right longitude
-# (so this example is central London)
-bounds_box = "51.6,51.4,-0.3,-0.1"
+# Bounding box for OpenSky API: lamin,lomin,lamax,lomax
+# That is: south latitude, west longitude, north latitude, east longitude
+# Tip: use https://opensky-network.org/api/states/all?lamin=&lomin=&lamax=&lomax=
+# to test your box in a browser before deploying
+# Example below is roughly Christchurch, NZ - adjust for your location
+bounds_box = "-44.0,172.0,-43.0,173.0"
 
-# "True" or "False" to enable or disable status LED
+# Enable or disable the status NeoPixel LED on the MatrixPortal
+# Shows yellow while connecting, green when connected, red on error
+# Set to "False" if you find it distracting
 status_leds = "True"
