@@ -131,4 +131,4 @@ You are on CircuitPython 9 or later. This version of the code already uses `root
 Your `settings.toml` is missing or has a formatting issue. Make sure the file is in the root of CIRCUITPY and all four entries are present.
 
 
-Disclosure. ClaudCode was used for this project & reademe.
+Disclosure. ClaudeCode was used for this project & reademe.
